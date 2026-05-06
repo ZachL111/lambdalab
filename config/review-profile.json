@@ -1,0 +1,29 @@
+{
+  "repo": "lambdalab",
+  "language": "Haskell",
+  "category": "Interpreters",
+  "case_count": 5,
+  "score_formula": "signal * 2 + slack + confidence - drag * 3",
+  "lane_thresholds": {
+    "ship": 140,
+    "watch": 105
+  },
+  "read_order": [
+    "README.md",
+    "fixtures/domain_review.csv",
+    "metadata/domain-review.json",
+    "examples/lambdalab-walkthrough.md"
+  ],
+  "first_question": "Does opcode pressure still dominate the review result?",
+  "second_question": "Is runtime guard being penalized hard enough before trace depth is trusted?",
+  "highest_case": {
+    "name": "recovery",
+    "focus": "trace depth",
+    "score": 218
+  },
+  "lowest_case": {
+    "name": "stress",
+    "focus": "stack movement",
+    "score": 135
+  }
+}

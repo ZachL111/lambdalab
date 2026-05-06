@@ -1,0 +1,73 @@
+{
+  "repo": "lambdalab",
+  "language": "Haskell",
+  "category": "Interpreters",
+  "goal": "Reduce lambda-calculus terms with alpha-safe normal order.",
+  "review_model": {
+    "terms": [
+      "opcode pressure",
+      "stack movement",
+      "runtime guard",
+      "trace depth"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "opcode pressure",
+      "signal": 44,
+      "slack": 53,
+      "drag": 16,
+      "confidence": 81,
+      "score": 174,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "stack movement",
+      "signal": 69,
+      "slack": 33,
+      "drag": 30,
+      "confidence": 54,
+      "score": 135,
+      "lane": "watch"
+    },
+    {
+      "name": "edge",
+      "focus": "runtime guard",
+      "signal": 49,
+      "slack": 44,
+      "drag": 22,
+      "confidence": 84,
+      "score": 160,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "trace depth",
+      "signal": 75,
+      "slack": 41,
+      "drag": 9,
+      "confidence": 54,
+      "score": 218,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "opcode pressure",
+      "signal": 75,
+      "slack": 32,
+      "drag": 16,
+      "confidence": 47,
+      "score": 181,
+      "lane": "ship"
+    }
+  ]
+}

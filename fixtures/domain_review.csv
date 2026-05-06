@@ -1,0 +1,6 @@
+name,focus,signal,slack,drag,confidence,score,lane
+baseline,opcode pressure,44,53,16,81,174,ship
+stress,stack movement,69,33,30,54,135,watch
+edge,runtime guard,49,44,22,84,160,ship
+recovery,trace depth,75,41,9,54,218,ship
+stale,opcode pressure,75,32,16,47,181,ship
